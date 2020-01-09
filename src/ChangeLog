@@ -1,0 +1,1450 @@
+commit ae816d2f7d8bb5fe1349c7c597304e701b2e19f4
+Author: Johan Dahlin <johan@gnome.org>
+Date:   2009-12-17
+
+    Fix a gtk-doc bug found by g-ir-scanner
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=604840
+
+M	gtksourceview/gtksourcecontextengine.c
+
+commit fe857229886c90b80c08ccdcbc873c7eed193698
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-12
+
+    Add some keywords.
+
+M	gtksourceview/language-specs/prolog.lang
+
+commit 5d63fc148138906ca97eca7cb323fac427ec5b84
+Author: Krzesimir Nowak <qdlacz@gmail.com>
+Date:	2009-12-12
+
+    Changed signal "line-mark-activated" and "cell-activated".
+
+    When creating those signals with g_signal_new, G_TYPE_POINTER was
+    used for GdkEvent*, where
+    GDK_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE should be ok.
+
+M	gtksourceview/gtksourcegutter.c
+M	gtksourceview/gtksourceview.c
+
+commit 01905c53378a2610ec8b0a1e7ed7bb3bc8049974
+Author: Krzesimir Nowak <qdlacz@gmail.com>
+Date:	2009-12-12
+
+    Remove a nonstandard char from comment.
+
+M	gtksourceview/gtksourceundomanager.c
+
+commit cc05b3f518a70013fb10be7b4adaa33f071dec8c
+Author: Krzesimir Nowak <qdlacz@gmail.com>
+Date:	2009-12-11
+
+    Add missing G_BEGIN_DECLS.
+
+M	gtksourceview/gtksourceprintcompositor.h
+
+commit 5227d5500300ad45d0c605ae49cbeccacb9bc73a
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-03
+
+    Add scaping highlighting for example \n in string.
+
+M	gtksourceview/language-specs/prolog.lang
+
+commit 6c33587812c6db4498a7ed9aa1b5384514b47cab
+Author: Michael Callahan <coder.callahan@gmail.com>
+Date:	2009-11-28
+
+    Use g_mapped_file_unref in place of deprecated g_mapped_file_free.
+
+M	gtksourceview/gtksourcelanguage-parser-1.c
+
+commit 2549d4a1b743ff5ebbae1e8835432392b9cfd5db
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-29
+
+    Fixes on prolog language. Fixes partially #602788
+
+    Highlight variables that word starts with capital letter and
+    highlight _ only if it is not in a word.
+
+M	gtksourceview/language-specs/prolog.lang
+
+commit ca84b8848927b83ad2eb90d9bb47a7166e4a76c1
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-26
+
+    Use def:reserved instead of def:error for reserved keywords
+
+M	gtksourceview/language-specs/java.lang
+
+commit 42f7241838ea7c7d02a79ad31b362a7bcf752972
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-11-22
+
+    Handle end-of-buffer special cases in move_lines
+
+M	gtksourceview/gtksourceview.c
+
+commit 9e8fd85f3bbda28e86163b4b98ebe995d166890c
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-02
+
+    More relicensing. Pawel W. Olszta sent me a mail aproving this. Bug
+    #159134.
+
+M	gtksourceview/language-specs/nemerle.lang
+
+commit 540cda4fa161d11b13e75c660e98a9b5f5d2aaa0
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-29
+
+    Update git.mk from pango
+
+M	git.mk
+
+commit d4c7d552f71954ae9bb4f8b15950734b6cad73b2
+Author: Toon Verstraelen <Toon.Verstraelen@UGent.be>
+Date:	2009-10-22
+
+    Improve fortran syntax highlighting
+
+M	gtksourceview/language-specs/fortran.lang
+
+commit b802e0ace3b5e36adbb462b76d3a5a82e30d5b6e
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-11-22
+
+    Force recalculation of width on expose when setting properties before
+    the window is realized. Fixes bug Bug 602369.
+
+M	gtksourceview/gtksourcegutter.c
+
+commit 9af84714473caa7d88c01e9ee729f9a7ecc6807d
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-01
+
+    Relicense as LGPL. See bug #159134.
+
+M	gtksourceview/language-specs/lua.lang
+
+commit 33153081d59d379650416c7d5438220d40bce530
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-31
+
+    Relicense as LGPL. Muntyan gave his approval by mail.
+
+M	gtksourceview/language-specs/t2t.lang
+
+commit 529cf1da85a1d22e198146b9f9a13a1940a81ca0
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-31
+
+    Relicense as LGPL. See bug #159134.
+
+M	gtksourceview/language-specs/R.lang
+
+commit 6b3ba1e0e0217e26435861f1fa2a06d2b0a822d8
+Author: Emmanuel Rodriguez <emmanuel.rodriguez@gmail.com>
+Date:	2009-10-31
+
+    Increment the ref count of the buffer and release the reference
+    in _dispose()
+
+M	gtksourceview/gtksourceprintcompositor.c
+
+commit 7ae22fc048f4c1baf1a03deffbc13eeae09e08df
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-31
+
+    Relicense as LGPL. See bug #159134.
+
+M	gtksourceview/language-specs/gtkrc.lang
+
+commit fd31751f8310e2bb0d77581e35543a75411fe992
+Author: Emmanuel Rodriguez <emmanuel.rodriguez@gmail.com>
+Date:	2009-10-30
+
+    Fix the markup for NULL in the documentation
+
+M	gtksourceview/gtksourceiter.c
+
+commit 3952f6be4a0ed7c56fb81f3c8bd4bd418b5c8f3c
+Author: lawrence <lawrence@iguana.com>
+Date:	2009-10-30
+
+    Fixed typo in R.lang such that .R files are recognised
+
+M	gtksourceview/language-specs/R.lang
+
+commit e1fcf20b0022de4e2807e47b18a318ec3ab1ca91
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-10-24
+
+    Add "undefined" keyword
+
+M	gtksourceview/language-specs/javascript.lang
+
+commit 7a81c48b7a4455d36d5146d88c156ecc7f3336e3
+Author: Leonid Kanter <leon@asplinux.ru>
+Date:	2009-10-11
+
+    Updated Russian translation
+
+M	po/ru.po
+
+commit e97ae0f39445ccc632895cb9f08770f2015c3f0c
+Author: Gil Forcada <gforcada@gnome.org>
+Date:	2009-10-09
+
+    Updated Catalan translation
+
+M	po/ca.po
+
+commit 57a5479c809c7732ea0175d9625db841ee910e49
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
+Date:	2009-09-28
+
+    Fixed licences to be LGPL
+
+M	gtksourceview/gtksourcegutter.c
+M	gtksourceview/gtksourcegutter.h
+
+commit 68483b86b6741d795b5c205e22af0b021f0c7191
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
+Date:	2009-09-28
+
+    Release 2.8.1
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit d989d0f96d146d57d52254b04bed08695d831edb
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2009-09-24
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit 7f8727f15789322bb0028d9e2f300e294f9048fd
+Author: Carl-Anton Ingmarsson <ca.ingmarsson@gmail.com>
+Date:	2009-09-17
+
+    don't show empty tooltip on SourceMark
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=595450
+
+M	gtksourceview/gtksourceview.c
+
+commit 88b304382ea3716548ff376e35cfa79dc101e838
+Author: Carl-Anton Ingmarsson <ca.ingmarsson@gmail.com>
+Date:	2009-09-17
+
+    don't add empty boxes to the SourceMark tooltip
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=595450
+
+M	gtksourceview/gtksourceview.c
+
+commit 8fc6b38b0670236066c8b21394b65349a96f07a9
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
+Date:	2009-09-21
+
+    Release 2.8.0
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit bd10a5b9cd3b10aad4d7da1e945de38b4ac579e2
+Author: Branko Kokanović <branko.kokanovic@gmail.com>
+Date:	2009-09-21
+
+    Updated Serbian translation
+
+M	po/sr.po
+M	po/sr@latin.po
+
+commit 9208a36b5e5f8037a02aefbdc000a2d1c6117a38
+Author: Shankar Prasad <svenkate@redhat.com>
+Date:	2009-09-21
+
+    Updated Kannada(kn) translation
+
+M	po/kn.po
+
+commit c831b674ad51dc87437a65530c6c1f614a049993
+Author: Petr Kovar <pknbe@volny.cz>
+Date:	2009-09-21
+
+    Updated Czech translation by Lucas Lommer
+
+M	po/cs.po
+
+commit 19702e7b40dae1e10095c515d0a77642988d7ebd
+Author: Carl-Anton Ingmarsson <ca.ingmarsson@gmail.com>
+Date:	2009-09-17
+
+    check for NULL cat->tooltip_func
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=595450
+
+M	gtksourceview/gtksourceview.c
+
+commit 1764a5c1ff6a95e54148fe255a313ba61fefef3c
+Author: Amitakhya Phukan <aphukan@fedoraproject.org>
+Date:	2009-09-20
+
+    Updating Assamese translations.
+
+M	po/as.po
+
+commit 23985dc82829c292e77b473f011315b0eca4a433
+Author: A S Alam <aalam@users.sf.net>
+Date:	2009-09-20
+
+    Updating Translation for Punjabi by A S Alam
+
+M	po/pa.po
+
+commit 15a56677da6e860ba54ce679cefa940e8239caf1
+Author: Changwoo Ryu <cwryu@debian.org>
+Date:	2009-09-20
+
+    Korean translation update
+
+M	po/ko.po
+
+commit 1789ecd14fbcf98adaebeeb73f29595eaa361828
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:	2009-09-19
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+M	po/zh_HK.po
+M	po/zh_TW.po
+
+commit 6eda1d205c70c179087cac9fab0afe6163dc2f78
+Author: krishnababu k <kkrothap@redhat.ocm>
+Date:	2009-09-17
+
+    Updated Telugu Translation
+
+M	po/te.po
+
+commit 8d87b9761106ef1c509c8a054b87c3eb9e44d529
+Author: Maxim V. Dziumanenko <dziumanenko@gmail.com>
+Date:	2009-09-17
+
+    Added Ukrainian translation
+
+M	po/uk.po
+
+commit b85d761539fcf48d6b12c7bf6afe2f28c102e787
+Author: Manoj Kumar Giri <mgiri@mgiri.csb>
+Date:	2009-09-17
+
+    Upadated Oriya Translation
+
+M	po/or.po
+
+commit 6d8a5f9215c3e4b14778e32575304689e9ebfe68
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-14
+
+    Release 2.7.5
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 71b738bf75a7660c15d22ea10eaba268cfec8db9
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-09-14
+
+    Do not assume that the border size equals gutter size
+
+    Be more careful in the logic that detects if gutter cell render
+    changed
+    size, by taking into accuont only the previous size of the gutter
+    itself
+    instead of assuming that it equals the size of the whole border.
+    Fixes bug #589382.
+
+M	gtksourceview/gtksourcegutter.c
+
+commit c960120523434f28f60ba779b7cbdfb9948fe35a
+Author: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+Date:	2009-09-13
+
+    Updated Romanian translation
+
+M	po/ro.po
+
+commit 29bc590d4ae4df008fa03eced12ef63efb3d308c
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-13
+
+    Change CRLF to LF endlines.
+
+M	po/bn.po
+
+commit 9aecb06af949b69d80faf87ace924252043cc073
+Author: Ask H. Larsen <asklarsen@gmail.com>
+Date:	2009-09-13
+
+    Updated Danish translation
+
+M	po/da.po
+
+commit 3a3e97bd3f485570ef4c2c3b0fdac7b500fa7a6a
+Author: Philip Withnall <philip@tecnocode.co.uk>
+Date:	2009-09-13
+
+    Updated British English translation
+
+M	po/en_GB.po
+
+commit 74180c3a8e734769380a354bd88d60e1630bc493
+Author: Ani <peter.ani@gmail.com>
+Date:	2009-09-12
+
+    Updaeted Malayalam Translations
+
+M	po/ml.po
+
+commit d37f743ad9ae40cab80385cbe977003c0282c889
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2009-09-12
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit c9ef8046eed37d4999a7133e951547d2867a400c
+Author: Gintautas Miliauskas <gintautas@miliauskas.lt>
+Date:	2009-09-10
+
+    Updated Lithuanian translation.
+
+M	po/lt.po
+
+commit 28afeba3b041af34c5dcf9cbca0eb5b073dc39e2
+Author: Rajesh Ranjan <rranjan@rranjan.csb>
+Date:	2009-09-10
+
+    hindi update by Rajesh Ranjan
+
+M	po/hi.po
+
+commit 344f82723526c26737a68fdd822f5faf382c5add
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-10
+
+    Skip glsl lang
+
+M	po/POTFILES.skip
+
+commit c8fbafbca49f7236185fd2275ee8a825c72f819b
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-10
+
+    Added OpenGL Shading Language by Simon Wenner and Chong Kai Xiong.
+
+M	gtksourceview/language-specs/Makefile.am
+A	gtksourceview/language-specs/glsl.lang
+M	gtksourceview/language-specs/testfiles.sh
+
+commit 2c88263bcbca1bc3a045cd8a39b7c2a68c692eaa
+Author: Baris Cicek <baris@teamforce.name.tr>
+Date:	2009-09-10
+
+    Updated Turkish translation.
+
+M	po/tr.po
+
+commit c06e2c53684df45f6affd4b0b584f137fd16e9bc
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:	2009-09-09
+
+    Hungarian translation updated
+
+M	po/hu.po
+
+commit 132bc8493473b4f49be8a033acdb240075c82bb3
+Author: Sandeep Shedmake <sshedmak@redhat.com>
+Date:	2009-09-09
+
+    Updated Marathi Translations
+
+M	po/mr.po
+
+commit 61cb7885e9d947647cce6b83bdb9ccadf4b8678f
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:	2009-09-09
+
+    Updated Gujarati Translations
+
+M	po/gu.po
+
+commit f52b1b7015d0ce88e88694322eba9a7634a10f72
+Author: Fábio Nogueira <fnogueira@gnome.org>
+Date:	2009-09-08
+
+    Corrected an ortographic error in Brazilian Portuguese translation
+
+M	po/pt_BR.po
+
+commit 5b9a91278d725268b10ecae61e3dc4d655a91af5
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2009-09-08
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 34c36bda0e83d00ae67c6a31d2de6aca98bbe92f
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-09-07
+
+    Fix cut&paste error that was assigning var twice
+
+M	gtksourceview/gtksourceview.c
+
+commit ad703aec4d3d71086c55cb96b2f53602050179af
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-03
+
+    Skip cuda language
+
+M	po/POTFILES.skip
+
+commit bbb428dc0c9756e7efc2beade5c3c0a3f2916b35
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-03
+
+    Added NVIDIA Cuda lang file by Huseyin Temucin.
+
+M	gtksourceview/language-specs/Makefile.am
+A	gtksourceview/language-specs/cuda.lang
+M	gtksourceview/language-specs/testfiles.sh
+
+commit 2c2c70427700b42db98b6ffe8f267e3574a1a5c0
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:	2009-09-01
+
+    Update Norwegian bokmål translation.
+
+M	po/nb.po
+
+commit a81d23ea4e047252a7beaa5a0dd07343b60ef5be
+Author: Wolfgang Stöggl <c72578@yahoo.de>
+Date:	2009-08-30
+
+    Updated German translation
+
+M	po/de.po
+
+commit 6ee0ad299baefa627d09f8c95716bcc1356679ac
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:	2009-08-28
+
+    Added Catalan (Valencian) translation
+
+M	po/LINGUAS
+A	po/ca@valencia.po
+
+commit e9e029585e21b821bda8087000ca0e2bcbaf0a31
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:	2009-08-27
+
+    Updated Bengali India Translation
+
+M	po/bn_IN.po
+
+commit 8f95e56581409879d88e865795e8d013cc7ac887
+Author: Inaki Larranaga Murgoitio <dooteo@zundan.com>
+Date:	2009-08-27
+
+    Updated Basque language
+
+M	po/eu.po
+
+commit 0a6f1f048852f68275055809e8583cbf7ac263be
+Author: ifelix <ifelix@redhat.com>
+Date:	2009-08-26
+
+    Updated Tamil Translations
+
+M	po/ta.po
+
+commit de0eef311fc45d91db962e83d4c4ca0a18cd84e6
+Author: Duarte Loreto <happyguy_pt@hotmail.com>
+Date:	2009-08-25
+
+    Updated Portuguese translation
+
+M	po/pt.po
+
+commit cc1994b1f2ff16d3bf38ac39d1183e3044d820c0
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-23
+
+    Release 2.7.4
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 2f84c3d5d25695f1514afb10a9f4abc0c7e4d48d
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-23
+
+    Add empty override file to make gtk-doc happy
+
+A	docs/reference/gtksourceview-2.0-overrides.txt
+
+commit 57f66787a1a3d3407a28e068c7221850c9254018
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-23
+
+    Fix some gtk-doc errors
+
+M	docs/reference/gtksourceview-2.0-sections.txt
+M	docs/reference/tmpl/view.sgml
+M	gtksourceview/gtksourcegutter.h
+
+commit 37f4adf657b1c6c7ba9c4c58624f0468ed02bd77
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-23
+
+    Fix docs of style scheme manager
+
+D	docs/reference/tmpl/stylemanager.sgml
+M	docs/reference/tmpl/stylescheme.sgml
+A	docs/reference/tmpl/styleschememanager.sgml
+
+commit 9e0c245162b88dad258a6d4244809dfa0edbc33f
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-23
+
+    Add MAINTAINERCLEANFILES sp that git.mk picks them up
+
+M	Makefile.am
+
+commit 75921895400d40f225e9cdb4a049a2587dff6960
+Author: Jamil Ahmed <itsjamil@gmail.com>
+Date:	2009-08-24
+
+    Updated Bengali translation
+
+M	po/bn.po
+
+commit 3fae81a908eccc4c9e3a3892ffb8987201083b07
+Author: Theppitak Karoonboonyanan <thep@linux.thai.net>
+Date:	2009-08-23
+
+    Updated Thai translation.
+
+M	po/th.po
+
+commit 753bffe7a5927a69ecab91b121f43f379f21cb26
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-22
+
+    Add ruby test file
+
+M	tests/testfiles.sh
+
+commit 80d64cd9a2f920b2944a52972c3300b542d965df
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:	2009-08-20
+
+    Updated Arabic translation
+
+M	po/ar.po
+
+commit 74dbb1085b84983290040ef57e8d4a38db531664
+Author: Claude Paroz <claude@2xlibre.net>
+Date:	2009-08-19
+
+    Updated French translation
+
+M	po/fr.po
+
+commit c8c4e734b1594dfa2d184c0f59a5436e8c1878ce
+Author: Antón Méixome <meixome@mancomun.org>
+Date:	2009-08-19
+
+    Updated Galician Translation
+
+M	po/gl.po
+
+commit b3bf2c7d38849b3f8d7b8bb38c68292744259c45
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-19
+
+    Fix GCC picky warnings, based on a patch by Philip Withnall.
+
+M	gtksourceview/gtksourcebuffer.c
+M	gtksourceview/gtksourcelanguage-parser-2.c
+M	gtksourceview/gtksourcelanguage.c
+M	gtksourceview/gtksourceprintcompositor.c
+M	gtksourceview/gtksourceundomanager.c
+M	gtksourceview/gtksourceview.c
+M	tests/test-widget.c
+
+commit c31144a67d78eecea94fcbba02d9ef0121f0989f
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-19
+
+    Add 'with' keyword to python.lang
+
+M	gtksourceview/language-specs/python.lang
+
+commit 062a9174c639ddffba5217252ba0c769b7dedf06
+Author: Leonardo Ferreira Fontenelle <leonardof@gnome.org>
+Date:	2009-08-19
+
+    Fixed minor mistake in Brazilian Portuguese translation.
+
+M	po/pt_BR.po
+
+commit ff2b5b9468ad5eceddda266a2922ddbd125221f8
+Author: Henrique P. Machado <zehrique@gmail.com>
+Date:	2009-08-19
+
+    Updated Brazilian Portuguese translation.
+
+M	po/pt_BR.po
+
+commit 6453dad8338c5a3b731724db42fed7c0e8fb2c83
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-18
+
+    Add *.make and *.mk globs for makefiles
+
+M	gtksourceview/language-specs/makefile.lang
+
+commit d16f86396f6d8046946ec6600a7ec372603d1c3c
+Author: Alexander Shopov <ash@contact.bg>
+Date:	2009-08-18
+
+    Updated Bulgarian translation
+
+M	po/bg.po
+
+commit 40c815a2b66408f5623ebc2213431ccd08a74809
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-18
+
+    Clarify docs
+
+M	gtksourceview/gtksourceview.c
+
+commit 2319e852bdf2371f427c1a12c0f28b5b7f078d1d
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-17
+
+    Fix gtk-doc warning about <b> inside an example
+
+M	gtksourceview/gtksourceview.c
+
+commit 3a697b76d8a60f22e892486a2bd07e50554f80a8
+Author: Tommi Vainikainen <thv@iki.fi>
+Date:	2009-08-16
+
+    Updated Finnish translation
+
+M	po/fi.po
+
+commit d194ec25dace9e1acb0081d5b5dd62243537e41c
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-08-16
+
+    Bitfields have to go at the end of the struct.
+
+M	gtksourceview/gtksourceview.c
+
+commit e41e7627148ac4666e54f8ffdbc2ddf88cdca272
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-14
+
+    Do not use bold line numbers if cursor is hidden
+
+M	gtksourceview/gtksourceview.c
+
+commit e428a208021533dce8e5442168f779c9b67e2432
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-14
+
+    Add gutter's callback function to the docs
+
+M	docs/reference/gtksourceview-2.0-sections.txt
+M	docs/reference/tmpl/gutter.sgml
+
+commit a7552e01a310a138337142ecceb73bf6d5671b5c
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-13
+
+    Free the sizes array in both branches of the if
+
+M	gtksourceview/gtksourcegutter.c
+
+commit 2626c2b4b9b05f9f5ebe94885a6638e959e55d42
+Author: Paolo Borelli <pborelli@gnome.org>
+Date:	2009-08-13
+
+    Be quiet about generated sources
+
+M	gtksourceview/Makefile.am
+
+commit bcdba5b855c20fdd87185d72d279bebb4b56ebd4
+Author: Milo Casagrande <milo@ubuntu.com>
+Date:	2009-08-12
+
+    Updated Italian translation
+
+M	po/it.po
+
+commit 985e8639577faee8d1e4fb8f6b92369e20832b52
+Author: Antón Méixome <meixome@mancoumun.org>
+Date:	2009-08-12
+
+    Updated Galician translation
+
+M	po/gl.po
+
+commit 049d729d448873e3e1403669d84830d40f964b42
+Author: Seán de Búrca <leftmostcat@gmail.com>
+Date:	2009-08-07
+
+    Updated Irish translation
+
+M	po/ga.po
+
+commit 64afd844cf4e3d926b739ee476a489ba0fd48658
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-08-03
+
+    Use the weight attribute instead of <b> for consistency
+
+M	gtksourceview/gtksourceview.c
+
+commit 18c2462718814dec558e4aeeb70f437e229d626d
+Author: Ivar Smolin <okul@linux.ee>
+Date:	2009-07-29
+
+    Updating Estonian translation
+
+M	po/et.po
+
+commit f70f98b5b5bfe1540ce484cc7816c8b18a638708
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2009-07-28
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit 5713ff7b456f954ad4ad1b630d6612792634a72a
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-07-27
+
+    Release 2.7.3
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 92c399552aa7a691d4587ec99cb7c184fa636097
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-25
+
+    One more tiny leak in gutter drawing
+
+M	gtksourceview/gtksourcegutter.c
+
+commit b01c70a66406a71eb1a173ef64b802cec0715604
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-25
+
+    Refsink gutter renderers for consistency with gtk
+
+M	gtksourceview/gtksourcegutter.c
+
+commit 7b76abb9fdf562488fc4e978cfc5d592c07816d4
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-25
+
+    Plug leak of utility arrays in gutter drawing
+
+M	gtksourceview/gtksourcegutter.c
+
+commit ac0ef42e10ed1c3904df84ede7e02d4fa470d115
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-25
+
+    Propagate the proper return value on button press
+
+M	gtksourceview/gtksourcegutter.c
+
+commit 0453a6ecedd45fa2010d8acf9543741a749d92fd
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-19
+
+    Release 2.7.2
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 7e619b62b64427558ba34b52aa50f603c6194742
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-19
+
+    Improvements to the lang file tutorial
+
+M	docs/reference/lang-tutorial.sgml
+
+commit b392bb2453ef7eeded0c28bfeb61b46b5e89d2c8
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-18
+
+    Add 'endselect' fortran keyword
+
+M	gtksourceview/language-specs/fortran.lang
+
+commit 148c9a2ca820065a87880af8580125d892d8178d
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-07-18
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit c7a4b44490aae25d36cb7f8c46e089a5fa3580ec
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-07-18
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 01a63b0652e16dfd6f455e21ca0a798c60e965c0
+Author: Milo Casagrande <milo@ubuntu.com>
+Date:	2009-07-18
+
+    Added Mallard support
+	* Added mallard.lang file for Mallard syntax highlight
+	* Modified Makefile.am to add mallard.lang
+	* Modified POTFILES.in to add mallard.lang
+
+M	gtksourceview/language-specs/Makefile.am
+A	gtksourceview/language-specs/mallard.lang
+M	po/POTFILES.in
+
+commit 502046b4cd5477960c93bae838eda8351bc3af47
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-07-15
+
+    Add internal word by Reuben Dunnington.
+
+M	gtksourceview/language-specs/vala.lang
+
+commit c73dc6c53904a4a62f5f0ac90017bd479aabcef8
+Author: Claude Paroz <claude@2xlibre.net>
+Date:	2009-07-14
+
+    Updated French translation
+
+M	po/fr.po
+
+commit bb5e3ca6dc25c49760d5ee32f4d9d92ff0ab8aa0
+Author: Claude Paroz <claude@2xlibre.net>
+Date:	2009-07-14
+
+    Fix POTFILES.in
+
+M	po/POTFILES.in
+
+commit 15c2b2a6bd8fb28258ef5904a064f688c94a7c57
+Author: Maxim V. Dziumanenko <dziumanenko@gmail.com>
+Date:	2009-07-09
+
+    Updated Ukrainian translation
+
+M	po/uk.po
+
+commit cbea7b658e7af247b10182dea66f25a0ac477dde
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2009-07-07
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit 677d6247ed091941b211694d3c3880726907d98f
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-07-02
+
+    Added assert word.
+
+    Added assert word to prolog lang file. Fixes bug #587577.
+
+M	gtksourceview/language-specs/prolog.lang
+
+commit 244d0b815df255ddde54a65c4c7e7a49c2d3c0ec
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-06-27
+
+    Enable silent mode if using a modern automake
+
+M	configure.ac
+
+commit 0b573f19fa5363d264833b59a00e8eac5f85cd83
+Author: Konstantin Lukaschenko <k.lukaschenko@gmail.com>
+Date:	2009-06-23
+
+    Command Substitution Highlight
+
+M	gtksourceview/language-specs/sh.lang
+
+commit 582a7b0c5c453f60e9e140a2c84c1532c3823fd3
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-06-27
+
+    Add more common commands to sh.lang
+
+    Add some common commands to sh.lang, patch by Konstantin, bug #586701
+
+M	gtksourceview/language-specs/sh.lang
+
+commit 9057f523a8443e002abc5300c61320e1cb616c98
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-06-23
+
+    Add cut word by Konstantin.
+
+M	gtksourceview/language-specs/sh.lang
+
+commit 1e4cfb0c8ea416f07f2a349011acaa6c16fe492c
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-06-23
+
+    Some improvements on the Eiffel lang by Remi Meier.
+
+M	gtksourceview/language-specs/eiffel.lang
+
+commit 0dd56e22401caa53aa013363f665687f973cbac9
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:	2009-06-16
+
+    Updated a fuzzy entry in Bengali India Translation
+
+M	po/bn_IN.po
+
+commit f7af3329618228b29f812adb6b51f0520a06bec8
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:	2009-06-16
+
+    Updated Bengali India Translations
+
+M	po/bn_IN.po
+
+commit b593ef4b5b8c6c352fad08b04ba52380815aed10
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:	2009-06-10
+
+    Updated Norwegian bokmål translation.
+
+M	po/nb.po
+
+commit 2d2ba9ce7ee57719edd7871749049677018fc702
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-30
+
+    Fix warning.
+
+M	gtksourceview/gtksourcegutter.c
+
+commit 64ab156ef8e497aa5ef9ce455d14217acf7044e5
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-30
+
+    Set the position on gtk_source_gutter_reorder.
+
+M	gtksourceview/gtksourcegutter.c
+
+commit 0691d1198536b89048195dafd6b749e1101c0138
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2009-05-30
+
+    Enhanced mark category icons
+
+    Mark categories can now have stock, and theme icons. The icons are
+    now also properly sized and aligned in the gutter and the tooltip.
+
+M	docs/reference/Makefile.am
+M	docs/reference/gtksourceview-2.0-sections.txt
+M	docs/reference/tmpl/view.sgml
+M	gtksourceview/gtksourceview.c
+M	gtksourceview/gtksourceview.h
+M	tests/test-widget.c
+
+commit 0d803836e458f3b816b22bb8f79b289a4139da70
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2009-05-30
+
+    Implemented GtkSourceGutter
+
+    GtkSourceGutter replaces the custom drawing of lines and marks
+    and at the same time, provides a public API to allow users to extend
+    the gutter. The gutter works very much the same as a GtkCellLayout, in
+    the sense that you can pack GtkCellRenderer objects in the gutter.
+
+M	docs/reference/Makefile.am
+M	docs/reference/gtksourceview-2.0-sections.txt
+M	docs/reference/gtksourceview-2.0.types
+M	docs/reference/gtksourceview-docs.sgml
+A	docs/reference/tmpl/gutter.sgml
+M	docs/reference/tmpl/view.sgml
+M	gtksourceview/Makefile.am
+A	gtksourceview/gtksourcegutter-private.h
+A	gtksourceview/gtksourcegutter.c
+A	gtksourceview/gtksourcegutter.h
+M	gtksourceview/gtksourceview-marshal.list
+M	gtksourceview/gtksourceview.c
+M	gtksourceview/gtksourceview.h
+M	tests/test-widget.c
+
+commit e4216a10cbd67a1a210db945c627bbdfb100f483
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-27
+
+    Manage the tooltip position properly.
+
+    Call gtk_text_view_window_to_buffer_coords to get the proper line
+    for tooltips.
+
+M	gtksourceview/gtksourceview.c
+
+commit 279fe46a41017fdb5760e05839122a9516ba29a2
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-27
+
+    Show the priority marks first.
+
+    In the tooltip mark, show the priority tooltips first.
+
+M	gtksourceview/gtksourceview.c
+
+commit e9d04993e65518eaa486e0351ea5a50936cd9bcf
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-26
+
+    release 2.7.1
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit ded66b7629745ca13801d9f44682be6753edc4f7
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-26
+
+    Add the 'desktop' category in the doap file
+
+M	gtksourceview.doap
+
+commit 3d4bfa27c6a38cf51cb058ae084ae043df68ee72
+Author: Jorge Gonzalez <jorgegonz@svn.gnome.org>
+Date:	2009-05-26
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 656c80bf1ce6204684f0671d545a5c137b9b47a9
+Author: drtvasudevan <agnihot3@gmail.com>
+Date:	2009-05-26
+
+    Updated Tamil translation
+
+M	po/ta.po
+
+commit 7e1829b9accf9d60823f80a0894ccfffe9bd1291
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-25
+
+    Remove the extra mark as it is confusing.
+
+M	tests/test-widget.c
+
+commit 049e05b813238c73836987d31e0dbafa6fc01054
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-25
+
+    Add tooltips to GtkSourceMarks.
+
+    Add tooltips to GtkSourceMarks to show aditional information by
+    Yevgen Muntyan.
+
+M	docs/reference/gtksourceview-2.0-sections.txt
+M	docs/reference/tmpl/view.sgml
+M	gtksourceview/gtksourceview.c
+M	gtksourceview/gtksourceview.h
+M	tests/test-widget.c
+
+commit b3a78fc1c20e50c0f56c808b1a7e510a060b41a8
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-24
+
+    Mark string for translation.
+
+M	gtksourceview/language-specs/prolog.lang
+
+commit 434ed6d833cd32e8f175d32b2fb136075b8c7877
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2009-05-23
+
+    Added keyword 'type' to Haskell language
+
+M	gtksourceview/language-specs/haskell.lang
+
+commit d538eea251803c823f38c7b8a2e20b44fae6ab85
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-17
+
+    Change CRLF endings to LF.
+
+M	gtksourceview/language-specs/lang_v1_to_v2.xslt
+
+commit 8719bfa9a1162bf9d3af3141a61703f0edfa18b9
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-16
+
+    Use gchar for consistency
+
+M	gtksourceview/gtksourcelanguage.c
+M	gtksourceview/gtksourcelanguage.h
+
+commit bb27b5a0c06f63e0941769cc104729b3c90915e4
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-16
+
+    Hopefully fix permissions
+
+M	po/mai.po
+
+commit 0e1b256494284bc31e41e29742cc8661c4014603
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-16
+
+    Release 2.6.2
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit ebb1c6847b7bdc13ad3171337ada92c31477115f
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-16
+
+    Dist doap file
+
+M	Makefile.am
+
+commit 93920a1d4d01eb33d1b2d26a58d85152c41b9b65
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-16
+
+    Improve ChangeLog generation
+
+    Use dist-hook for generating ChangeLogs so that it is just put in
+    distdir
+
+M	Makefile.am
+
+commit 86af358170a7b0c515a35a3916bc95686e5375aa
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-16
+
+    Update kate scheme color.
+
+    Update the scheme color to use the colors used by kate in its
+    latest version.
+
+M	gtksourceview/language-specs/kate.xml
+
+commit 8d3fd32d1bc5ac8ddc0e7ceedaf9854d894d33ba
+Author: krishnababu k <kkrothap@redhat.ocm>
+Date:	2009-05-15
+
+    Adding new Telegu Translations
+
+M	po/te.po
+
+commit dbad776176b5d91b574bef3298d8adf53303e1f4
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-14
+
+    Use #blue instead of blue.
+
+M	gtksourceview/language-specs/cobalt.xml
+
+commit 6c0fb0263c43dbb8c017f9fa61af7eb770040d0d
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-14
+
+    Typo in octave.lang.
+
+    Highlight columns instead of colums.
+
+M	gtksourceview/language-specs/octave.lang
+
+commit 6c5612162302fd2143ca4c7be76a582be0d340c4
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-07
+
+    Add the %docdir rpm keyword, fixes bug #581788
+
+M	gtksourceview/language-specs/rpmspec.lang
+
+commit 4a09b43f9b03ab0639f34e00278bd631a08bc8be
+Author: Christian Persch <chpe@gnome.org>
+Date:	2009-05-07
+
+    Safely printf strings
+
+    Bug #581734.
+
+M	gtksourceview/gtksourcecontextengine.c
+M	gtksourceview/gtksourceview-i18n.h
+M	tests/test-widget.c
+
+commit e86ff373d46de9215731845bf5fecb099b4e98b0
+Author: Ivar Smolin <okul@linux.ee>
+Date:	2009-05-07
+
+    Updating Estonian translation
+
+M	po/et.po
+
+commit ca1cea207c697c953090bb9c8eee02783dab1318
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-05
+
+    Add git.mk to generate automatically the .gitignore file.
+
+M	Makefile.am
+M	docs/Makefile.am
+M	docs/reference/Makefile.am
+A	git.mk
+M	gtksourceview/Makefile.am
+M	gtksourceview/language-specs/Makefile.am
+M	tests/Makefile.am
+
+commit bfd52d29213ef703f8f96b71cd591844336d5af3
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-05
+
+    Add draw-spaces color for oblivion.
+
+    Use a darker color for draw-spaces in the oblivion style.
+
+M	gtksourceview/language-specs/oblivion.xml
+
+commit 103472af7cc4d0e3ee5d04c2b1d599c7cb80cdb1
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-03
+
+    Some fixes to the doap file
+
+M	gtksourceview.doap
+
+commit 1a4da210f7d285e1aaddb99f3a54624532552f77
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-02
+
+    Update HACKING file for git
+
+M	HACKING
+
+commit d65adf1e59e1800aaedb83c4a8041ec22f8348da
+Author: Maxim V. Dziumanenko <dziumanenko@gmail.com>
+Date:	2009-04-28
+
+    Updated Ukrainian translation
+
+M	po/uk.po
+
+commit eb203e687c0356b198195025c56adacc793a1019
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Autogenerate ChangeLog
+
+    Autogenerate ChangeLog from the git log.
+
+A	ChangeLog
+M	Makefile.am
+
+commit 30842751beb402359ef39e6287804943dc3b9488
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Archive old ChangeLog
+
+    Move current ChangeLog file to ChangeLog-20090418
+
+R100	ChangeLog	ChangeLog-20090418
+
+commit 1cebf47bb798ebcf9027b83a7d9c836d7317b126
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    update MAINTAINERS
+
+    Add myself to the maintainers file
+
+M	MAINTAINERS
+
+commit 8b5b439b327e2d6236c5b2b0c4442c743b8147cb
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Add doap file
+
+    Add gtksourceview.doap file
+
+A	gtksourceview.doap
+
+commit a93d2773fbb0fcbb9fb1ba2ef5d362e34fe67612
+Author: Paolo Borelli <pborelli@src.gnome.org>
+Date:	2009-04-12
+
+    2.6.1
+
+    svn path=/trunk/; revision=2273
+
+M	ChangeLog
+M	NEWS
+M	README
+M	configure.ac
+M	po/ChangeLog
+
+commit 28ec3334dddeb83c6747f7f54969c114f63b4d74
+Author: Baris Cicek <bcicek@src.gnome.org>
+Date:	2009-04-12
+
+    Updated Turkish translation
+
+    svn path=/trunk/; revision=2271
+
+M	po/ChangeLog
+M	po/tr.po

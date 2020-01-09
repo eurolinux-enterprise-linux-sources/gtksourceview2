@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GtkSourceStyleScheme</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="GtkSourceView 2 Reference Manual">
+<link rel="up" href="rn01.html" title="API reference">
+<link rel="prev" href="GtkSourceStyle.html" title="GtkSourceStyle">
+<link rel="next" href="GtkSourceStyleSchemeManager.html" title="GtkSourceStyleSchemeManager">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="reference" href="rn01.html" title="API reference">
+<link rel="reference" href="rn02.html" title="Syntax highlighting reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="GtkSourceStyle.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="rn01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GtkSourceView 2 Reference Manual</th>
+<td><a accesskey="n" href="GtkSourceStyleSchemeManager.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#GtkSourceStyleScheme.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#GtkSourceStyleScheme.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#GtkSourceStyleScheme.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#GtkSourceStyleScheme.properties" class="shortcut">Properties</a>
+</td></tr>
+</table>
+<div class="refentry" title="GtkSourceStyleScheme">
+<a name="GtkSourceStyleScheme"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GtkSourceStyleScheme.top_of_page"></a>GtkSourceStyleScheme</span></h2>
+<p>GtkSourceStyleScheme — Object controlling apperance of <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a></p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="GtkSourceStyleScheme.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;gtksourceview/gtksourcestylescheme.h&gt;
+
+                    <a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleScheme-struct" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a>;
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       <a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-id" title="gtk_source_style_scheme_get_id ()">gtk_source_style_scheme_get_id</a>      (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       <a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-name" title="gtk_source_style_scheme_get_name ()">gtk_source_style_scheme_get_name</a>    (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       <a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-description" title="gtk_source_style_scheme_get_description ()">gtk_source_style_scheme_get_description</a>
+                                                        (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> * const * <a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-authors" title="gtk_source_style_scheme_get_authors ()">gtk_source_style_scheme_get_authors</a>
+                                                        (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       <a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-filename" title="gtk_source_style_scheme_get_filename ()">gtk_source_style_scheme_get_filename</a>
+                                                        (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);
+<a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle">GtkSourceStyle</a> *    <a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-style" title="gtk_source_style_scheme_get_style ()">gtk_source_style_scheme_get_style</a>   (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme,
+                                                         const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *style_id);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="GtkSourceStyleScheme.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----GtkSourceStyleScheme
+</pre>
+</div>
+<div class="refsect1" title="Properties">
+<a name="GtkSourceStyleScheme.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleScheme--description" title='The "description" property'>description</a>"              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read
+  "<a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleScheme--filename" title='The "filename" property'>filename</a>"                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read
+  "<a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleScheme--id" title='The "id" property'>id</a>"                       <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read / Write / Construct Only
+  "<a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleScheme--name" title='The "name" property'>name</a>"                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="GtkSourceStyleScheme.description"></a><h2>Description</h2>
+<p>
+<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a> contains all the text styles to be used
+in <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> and <a class="link" href="GtkSourceBuffer.html" title="GtkSourceBuffer"><span class="type">GtkSourceBuffer</span></a>. For instance, it contains
+text styles for syntax highlighting, it may contain foreground
+and background color for non-highlighted text, etc.
+</p>
+<p>
+Style schemes are stored in XML files. The format of scheme file is
+the following.
+</p>
+<p>
+The toplevel tag in a style scheme file is <code class="code">&lt;style-scheme&gt;</code>.
+It has the following attributes:
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">id</code> (mandatory)</span></p></td>
+<td><p>
+Identifier for the style scheme. This is must be unique among style schemes.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">name</code> (mandatory)</span></p></td>
+<td><p>
+Name of the style scheme. This is the name of the scheme to display to user, e.g.
+in a preferences dialog.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">_name</code></span></p></td>
+<td><p>
+This is the same as <code class="code">name</code> attribute, except it will be translated.
+<code class="code">name</code> and <code class="code">_name</code> may not be used simultaneously.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">parent-scheme</code> (optional)</span></p></td>
+<td><p>
+Style schemes may have <span class="emphasis"><em>parent</em></span> schemes: all styles but those specified
+in the scheme will be taken from the parent scheme. In this way a scheme may
+be customized without copying all its content.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">version</code> (mandatory)</span></p></td>
+<td><p>
+Style scheme format identifier. At the moment it must be "1.0".
+</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+<p>
+<code class="code">style-scheme</code> tag may contain the following tags:
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">author</code></span></p></td>
+<td><p>
+Name of the style scheme author.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">description</code></span></p></td>
+<td><p>
+Description of the style scheme.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">_description</code></span></p></td>
+<td><p>
+Same as <code class="code">description</code> except it will be localized.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">color</code> tags</span></p></td>
+<td><p>
+These define color names to be used in <code class="code">style</code> tags.
+It has two attributes: <code class="code">name</code> and <code class="code">value</code>.
+<code class="code">value</code> is the hexadecimal color specification like
+"#000000" or named color understood by Gdk prefixed with "#",
+e.g. "#beige".
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">style</code> tags</span></p></td>
+<td><p>
+See below for their format description.
+</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+<p>
+Each <code class="code">style</code> tag describes a single element of style scheme (it corresponds
+to <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> object). It has the following attributes:
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">name</code> (mandatory)</span></p></td>
+<td><p>
+Name of the style. It can be anything, syntax highlighting uses <span class="emphasis"><em>lang-id:style-id</em></span>,
+and there are few special styles which are used to control general appearance
+of the text. Style scheme may contain other names to be used in an application. For instance,
+it may define color to highlight compilation errors in a build log or a color for
+bookmarks.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">foreground</code></span></p></td>
+<td><p>
+Foreground color. It may be name defined in one of <code class="code">color</code> tags, or value in
+hexadecimal format, e.g. "#000000", or symbolic name understood
+by Gdk, prefixed with "#", e.g. "#magenta" or "#darkred".
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">background</code></span></p></td>
+<td><p>
+Background color.
+</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">italic</code></span></p></td>
+<td><p>"true" or "false"</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">bold</code></span></p></td>
+<td><p>"true" or "false"</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">underline</code></span></p></td>
+<td><p>"true" or "false"</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">strikethrough</code></span></p></td>
+<td><p>"true" or "false"</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+<p>
+The following are names of styles which control <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> appearance:
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><code class="code">text</code></span></p></td>
+<td><p>Default style of text.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">selection</code></span></p></td>
+<td><p>Style of selected text.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">selection-unfocused</code></span></p></td>
+<td><p>Style of selected text when the widget doesn't have input focus.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">cursor</code></span></p></td>
+<td><p>Text cursor style. Only <code class="code">foreground</code> attribute is used
+for this style</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">secondary-cursor</code></span></p></td>
+<td><p>Secondary cursor style (used in bidi text). Only <code class="code">foreground</code> attribute
+is used for this style. If this is not set while "cursor" is, then a color between text background
+and cursor colors is chosen, so it is enough to use "cursor" style only.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">current-line</code></span></p></td>
+<td><p>Current line style. Only <code class="code">background</code> attribute is used</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">line-numbers</code></span></p></td>
+<td><p>Text and background colors for the left margin, on which line numbers are
+drawn</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">bracket-match</code></span></p></td>
+<td><p>Style to use for matching brackets.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><code class="code">bracket-mismatch</code></span></p></td>
+<td><p>Style to use for mismatching brackets.</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="GtkSourceStyleScheme.details"></a><h2>Details</h2>
+<div class="refsect2" title="GtkSourceStyleScheme">
+<a name="GtkSourceStyleScheme-struct"></a><h3>GtkSourceStyleScheme</h3>
+<pre class="programlisting">typedef struct _GtkSourceStyleScheme GtkSourceStyleScheme;</pre>
+<p>
+<span class="structname">GtkSourceStyleScheme</span> structure contains only
+private members and should not be accessed directly.
+</p>
+</div>
+<hr>
+<div class="refsect2" title="gtk_source_style_scheme_get_id ()">
+<a name="gtk-source-style-scheme-get-id"></a><h3>gtk_source_style_scheme_get_id ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       gtk_source_style_scheme_get_id      (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scheme</code></em> :</span></p></td>
+<td> a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <em class="parameter"><code>scheme</code></em> id.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 2.0</p>
+</div>
+<hr>
+<div class="refsect2" title="gtk_source_style_scheme_get_name ()">
+<a name="gtk-source-style-scheme-get-name"></a><h3>gtk_source_style_scheme_get_name ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       gtk_source_style_scheme_get_name    (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scheme</code></em> :</span></p></td>
+<td> a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <em class="parameter"><code>scheme</code></em> name.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 2.0</p>
+</div>
+<hr>
+<div class="refsect2" title="gtk_source_style_scheme_get_description ()">
+<a name="gtk-source-style-scheme-get-description"></a><h3>gtk_source_style_scheme_get_description ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       gtk_source_style_scheme_get_description
+                                                        (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scheme</code></em> :</span></p></td>
+<td> a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <em class="parameter"><code>scheme</code></em> description (if defined) or NULL.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 2.0</p>
+</div>
+<hr>
+<div class="refsect2" title="gtk_source_style_scheme_get_authors ()">
+<a name="gtk-source-style-scheme-get-authors"></a><h3>gtk_source_style_scheme_get_authors ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> * const * gtk_source_style_scheme_get_authors
+                                                        (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scheme</code></em> :</span></p></td>
+<td> a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a <a href="/opt/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array containing the <em class="parameter"><code>scheme</code></em> authors or
+<a href="/opt/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if no author is specified by the style
+scheme.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 2.0</p>
+</div>
+<hr>
+<div class="refsect2" title="gtk_source_style_scheme_get_filename ()">
+<a name="gtk-source-style-scheme-get-filename"></a><h3>gtk_source_style_scheme_get_filename ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *       gtk_source_style_scheme_get_filename
+                                                        (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scheme</code></em> :</span></p></td>
+<td> a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <em class="parameter"><code>scheme</code></em> file name if the scheme was created parsing a
+style scheme file or NULL in the other cases.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 2.0</p>
+</div>
+<hr>
+<div class="refsect2" title="gtk_source_style_scheme_get_style ()">
+<a name="gtk-source-style-scheme-get-style"></a><h3>gtk_source_style_scheme_get_style ()</h3>
+<pre class="programlisting"><a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle">GtkSourceStyle</a> *    gtk_source_style_scheme_get_style   (<a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">GtkSourceStyleScheme</a> *scheme,
+                                                         const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a> *style_id);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>scheme</code></em> :</span></p></td>
+<td> a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>style_id</code></em> :</span></p></td>
+<td> id of the style to retrieve.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> style which corresponds to <em class="parameter"><code>style_id</code></em> in the <em class="parameter"><code>scheme</code></em>,
+or <a href="/opt/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> when no style with this name found. It is owned by <em class="parameter"><code>scheme</code></em>
+and may not be unref'ed.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 2.0</p>
+</div>
+</div>
+<div class="refsect1" title="Property Details">
+<a name="GtkSourceStyleScheme.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" title='The "description" property'>
+<a name="GtkSourceStyleScheme--description"></a><h3>The <code class="literal">"description"</code> property</h3>
+<pre class="programlisting">  "description"              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read</pre>
+<p>Style scheme description.</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" title='The "filename" property'>
+<a name="GtkSourceStyleScheme--filename"></a><h3>The <code class="literal">"filename"</code> property</h3>
+<pre class="programlisting">  "filename"                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read</pre>
+<p>
+Style scheme filename or NULL.</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" title='The "id" property'>
+<a name="GtkSourceStyleScheme--id"></a><h3>The <code class="literal">"id"</code> property</h3>
+<pre class="programlisting">  "id"                       <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read / Write / Construct Only</pre>
+<p>
+Style scheme id, a unique string used to identify the style scheme
+in <a class="link" href="GtkSourceStyleSchemeManager.html" title="GtkSourceStyleSchemeManager"><span class="type">GtkSourceStyleSchemeManager</span></a>.</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" title='The "name" property'>
+<a name="GtkSourceStyleScheme--name"></a><h3>The <code class="literal">"name"</code> property</h3>
+<pre class="programlisting">  "name"                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar">gchar</a>*                : Read</pre>
+<p>
+Style scheme name, a translatable string to present to user.</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1" title="See Also">
+<a name="GtkSourceStyleScheme.see-also"></a><h2>See Also</h2>
+<p>
+<a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a>, <a class="link" href="GtkSourceStyleSchemeManager.html" title="GtkSourceStyleSchemeManager"><span class="type">GtkSourceStyleSchemeManager</span></a>
+</p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>
